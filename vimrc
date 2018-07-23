@@ -17,23 +17,44 @@ set autoindent
 set cindent
 
 "设置编码方式
+set fileencoding=utf-8
+set fileencodings=utf-8,gb2312,gb18030,latin1
+set termencoding=utf-8
 set encoding=utf-8
+
+"在第64行显示竖线
+set cc=64
+" 高亮显示当前行
+set cursorline
+
+"设置各种缩进
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set autoindent
+set smartindent
+set cindent
+"tab转换为空格
+set expandtab
+
+"自动完成大括号
+imap { {<CR>}<Esc>kA<CR>
  
 " "自动判断编码时 依次尝试以下编码
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1"
 
 "开启语法高亮功能
-syntax enable
-syntax on
+"syntax enable
+"syntax on
 
 "设置搜索时忽略大小写
 set ignorecase
 
 "检测文件类型
-filetype on
+"filetype on
 
 "启动智能补全
-filetype plugin indent on
+"filetype plugin indent on
 
 "
 " Config a Go IDE, Learn https://studygolang.com/articles/1785
